@@ -1,0 +1,114 @@
+[
+  {
+    "id": "planet-1",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "factual",
+    "input": "What percentage less sea ice cover is there today compared to 1980?",
+    "expected_output": "There is 40 percent less sea ice cover today than there was in 1980."
+  },
+  {
+    "id": "planet-2",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "factual",
+    "input": "What is a narwhal's tusk actually?",
+    "expected_output": "It is an overgrown canine tooth, about three meters long."
+  },
+  {
+    "id": "planet-3",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "factual",
+    "input": "How thick is the ice at the center of Antarctica?",
+    "expected_output": "Over four kilometers thick."
+  },
+  {
+    "id": "planet-4",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "factual",
+    "input": "Which whales travel to Antarctica specifically to feed on krill?",
+    "expected_output": "Humpback whales, traveling from the tropics."
+  },
+  {
+    "id": "planet-5",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "multi-part",
+    "input": "What two hunting techniques does the video describe for catching prey in the polar regions, and who uses them?",
+    "expected_output": "Orcas (killer whales) hunt penguins in stealth mode, without making a sound, often working together as a pod. Polar bears stalk seals by treading carefully in their mother's footsteps to stay quiet and use a pouncing technique at seal breathing holes in the ice."
+  },
+  {
+    "id": "planet-6",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "multi-part",
+    "input": "By what year will the Arctic ocean be largely free of summer ice, and how much faster is the Arctic warming compared to the rest of the planet?",
+    "expected_output": "By 2040 the Arctic ocean will be largely free of ice during the summer months. The Arctic is warming twice as fast as anywhere else on the planet."
+  },
+  {
+    "id": "planet-7",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "factual",
+    "input": "Why do gentoo penguins have to come ashore in spring?",
+    "expected_output": "To breed and lay their eggs — they need the rare ice-free, bare rocky patches on Antarctica, since gentoos can only lay eggs where there's no ice."
+  },
+  {
+    "id": "planet-8",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "factual",
+    "input": "Why are so many walruses gathering on the Russian coast?",
+    "expected_output": "Because the sea ice they normally rest on has retreated too far north, so this beach is the closest place to their feeding grounds where they can haul out and rest."
+  },
+  {
+    "id": "planet-9",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "unanswerable",
+    "input": "What is the name of the ship the camera crew used to film this documentary?",
+    "expected_output": "I don't know based on this video."
+  },
+  {
+    "id": "planet-10",
+    "video_id": "cTQ3Ko9ZKg8",
+    "tag": "unanswerable",
+    "input": "How many eggs does a gentoo penguin lay per breeding season?",
+    "expected_output": "I don't know based on this video."
+  },
+  {
+    "id": "zoo-1",
+    "video_id": "jNQXAC9IVRw",
+    "tag": "factual",
+    "input": "What animal is the presenter standing in front of?",
+    "expected_output": "Elephants."
+  },
+  {
+    "id": "zoo-2",
+    "video_id": "jNQXAC9IVRw",
+    "tag": "factual",
+    "input": "What does the presenter say is the cool thing about the elephants?",
+    "expected_output": "That they have really, really, really long trunks."
+  },
+  {
+    "id": "zoo-3",
+    "video_id": "jNQXAC9IVRw",
+    "tag": "multi-part",
+    "input": "According to the presenter, what is cool about the elephants, and is anything else discussed in the video?",
+    "expected_output": "The only thing discussed is that the elephants have really long trunks — the presenter says that's pretty much all there is to say, so no other topic is covered."
+  },
+  {
+    "id": "zoo-4",
+    "video_id": "jNQXAC9IVRw",
+    "tag": "unanswerable",
+    "input": "How many elephants are in the enclosure?",
+    "expected_output": "I don't know based on this video."
+  },
+  {
+    "id": "zoo-5",
+    "video_id": "jNQXAC9IVRw",
+    "tag": "unanswerable",
+    "input": "What zoo is this video filmed at?",
+    "expected_output": "I don't know based on this video."
+  },
+  {
+    "id": "zoo-6",
+    "video_id": "jNQXAC9IVRw",
+    "tag": "unanswerable",
+    "input": "What do the elephants eat?",
+    "expected_output": "I don't know based on this video."
+  }
+]
