@@ -1,0 +1,16 @@
+# Dev/CI-only — install with `pip install -r eval/requirements.txt` on top of the root
+# requirements.txt. Deliberately NOT merged into the root requirements.txt: that file is what
+# Vercel packages into the deployed Python function, and deepeval pulls in a large dependency
+# tree (litellm, pydantic extras, tokenizers, etc.) that has no reason to ship to production —
+# see specs/03-evaluation-deepeval.md ("Evaluation is a local/CI dev-time process").
+#
+# Requires Python >=3.10 — this repo's installed deepeval (4.2.0) uses `X | Y` union syntax at
+# module level and fails to *import* under 3.9 (not just a requires_python metadata restriction).
+# Local dev now runs on Python 3.12 (installed via `uv python install 3.12`) for this reason,
+# which also more accurately mirrors Vercel's own Python runtime (3.12+) than 3.9 ever did.
+deepeval==4.2.0
+
+# tests/ (Phase 7 unit suite) — was already present transitively as a deepeval dependency, but
+# pinned explicitly here rather than relied on implicitly: `tests/` should keep passing even if
+# deepeval's own dependency tree ever drops pytest.
+pytest==9.1.1

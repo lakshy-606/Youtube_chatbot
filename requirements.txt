@@ -1,6 +1,18 @@
-gradio
-langchain-openai
-youtube-transcript-api
-langchain-community
-langchain-core
-python-dotenv
+# Python deps for the Vercel serverless function (api/chat.py) and the rag/ package it imports.
+# Deliberately excludes torch/sentence-transformers and any ML-local Guardrails validators —
+# see specs/02-advanced-retrieval.md and specs/04-guardrails.md for why (Vercel Python bundle
+# size/memory limits on the free tier). No OpenAI/Anthropic dependency: chat runs on an
+# open-source model (gpt-oss-120b) served free via Groq, embeddings run through Pinecone
+# Inference, transcripts run through Supadata's hosted API (not local scraping — see
+# rag/ingestion/transcript.py). More deps land here phase by phase — see specs/06-phased-rollout.md.
+fastapi==0.128.8
+python-dotenv==1.2.1
+httpx==0.28.1
+pinecone==7.3.0
+langchain-core==0.3.86
+langchain-groq==0.3.8
+# Phase 5 (specs/04-guardrails.md): only the core guardrails-ai framework — Guard/Validator/
+# @register_validator for hand-written LLM-based guards, none of the heavy Hub-installed
+# validators (every one covering these checks pulls in torch/transformers/sentence-transformers
+# or a hardcoded OpenAI dep on live inspection; see that spec for the investigation).
+guardrails-ai==0.6.8
